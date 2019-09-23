@@ -12,9 +12,13 @@ body {
     grid-template-areas: 
     "header header header header"
     "generation generation generation generation"
-    "bicycleleft bicycleleft bicycleleft bicycleright" ;
+    "bicycleleft bicycleleft bicycleleft bicycleright"
+    "vintageleft vintageright vintageright vintageright"
+    "retroleft retromid retromid retroright"
+    ;
     max-width: 1600px;
     margin: 0 auto;
+    background: #f7f7f7;
 }
 
 .header {
@@ -114,13 +118,57 @@ h1,h2 {
     margin-top: 38px;
 }
 
+.vintageright {
+    grid-area: vintageright;  
+    height: 600px;
+    background: url(../img/vintage-right.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.vintageleft {
+    grid-area: vintageleft;
+    height: 600px;
+    background: url(../img/vintage-left.png) no-repeat;
+    background-size: contain;
+    background-position: center;  
+}
+
+.retroleft {
+    grid-area: retroleft;
+    height: 600px;
+    background: url(../img/retro-left.png) no-repeat;
+    background-size: contain;
+    background-position: center;  
+}
+.retromid {
+    grid-area: retromid;
+    height: 600px;
+    background: url(../img/retro-mid.png) no-repeat;
+    background-size: contain;
+    background-position: center;  
+}
+.retroright {
+    grid-area: retroright;
+    height: 600px;
+    background: url(../img/retro-right.png) no-repeat;
+    background-size: contain;
+    background-position: center;  
+}
+
 @media (max-width: 1600px) {
     body {
     grid-template-areas: 
     "header header header header"
     "generation generation generation generation"
     "bicycleleft bicycleleft bicycleleft bicycleleft" 
-     "bicycleright bicycleright bicycleright bicycleright";
+    "bicycleright bicycleright bicycleright bicycleright"
+    "vintageleft vintageleft vintageleft vintageleft"
+    "vintageright vintageright vintageright vintageright"
+    "retroleft retroleft retroleft retroleft"
+    "retromid retromid retromid retromid"
+    "retroright retroright retroright retroright"
+     ;
     }
 }
 @media (max-width: 700px) {
