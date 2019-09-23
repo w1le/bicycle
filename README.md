@@ -1,2 +1,2 @@
 # bicycle
- simple page with using grid. adaptive
+https://w1le.github.io/bicycle/.
